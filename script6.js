@@ -1,16 +1,24 @@
 // HOMEWORK 6-1
-let name = 'FoziL'
-console.log(name.endsWith('l') || name.endsWith('L'));
+let name = '   FoziL    '
+console.log(name.includes('l') || name.includes('L'));
+console.log(name.trim().endsWith('l') || name.trim().endsWith('L'));
+console.log(name.trim().toLowerCase().endsWith('l'));
+console.log(name.trim().toLowerCase()[name.trim().length -1] === 'l');
+
+let newStr = name.trim().toLowerCase();
+console.log(newStr[newStr.length -1] === 'l');  // optimal version
+
+
 
 // HOMEWORK 6-2
-var str1 = 'Web'
-var str2 = 'Brain'
+let str1 = 'Web'
+let str2 = 'Brain'
+let extraStr = str1
 
-str1 = 'Brain'
-str2 = 'Web'
+str1 = str2;
+str2 = extraStr;
 
 console.log(str2);
-
 
 // HOMEWORK 6-3
 let year = 2021;
