@@ -17,10 +17,10 @@ console.log(user);
 // HOMEWORK 7-2
 let schedule = {
     8.30: 'Get up'
-};
+};                                            
 
-function isEmpty(schedule) {
-    for(let key in schedule){
+function isEmpty(object) {
+    for(let key in object){
         return false 
     }
     return true 
@@ -52,10 +52,10 @@ let menu = {
     title: 'My menu'
 }
 
-function multiplyNumeric (menu) {
-    for (let key in menu){
-        if (typeof menu[key] === 'number'){
-            menu[key] *= 2
+function multiplyNumeric (obj) {
+    for (let key in obj){
+        if (typeof obj[key] === 'number'){
+            obj[key] *= 2
         }
     }
 }
