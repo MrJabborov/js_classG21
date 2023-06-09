@@ -6,10 +6,19 @@ console.log(MathPow(5,2));
 
 
 // HOMEWORK 5-2
+// 1st method
 function MathSqrt(son, daraja) {
     return son ** (1/2)
 }
 console.log(MathSqrt(64));
+
+// 2nd method
+function calculateSquareRoot(number) {
+    var squareRoot = Math.sqrt(number);
+    console.log(squareRoot);
+}
+calculateSquareRoot(64);
+  
 
 
 // // HOMEWORK 5-3
