@@ -1,4 +1,3 @@
- 
 // HOMEWORK 13-1
 // Getting sum of nested obj.age in Recursive function
 
