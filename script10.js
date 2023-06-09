@@ -108,9 +108,8 @@ console.log(deleteFruit('peach'));
 
 
 
-// HOMEWORK 10-5
+// HOMEWORK 10-5 (FINISHED)
 // Find the sum of the nested array's value.
 
-let arr1 = [1, [3, [5, [10]]]];
-console.log(arr1.flat(Infinity).reduce( (initial, total) => initial + total, 0));
-
+let array1 = [1, [3, [5, [10]]]];
+console.log(array1.flat(Infinity).reduce( (initial, total) => initial + total, 0));
