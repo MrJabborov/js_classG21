@@ -1,16 +1,16 @@
                                  //HOMEWORK
                                // with IF/ELSE
-let num = 5; 
+let number1 = 5; 
 
-if (num % 2 === 0){
+if (number1 % 2 === 0){
     console.log('Juft son');
 }else{
     console.log('Toq son');
 }
 
                                 // with TERNARY
-let num = 11;
-num % 2 === 0 ? console.log('Juft son') : console.log('Toq son');
+let number2 = 11;
+number2 % 2 === 0 ? console.log('Juft son') : console.log('Toq son');
 
 
 
@@ -37,9 +37,9 @@ if (ball <= 100 && ball >= 86){
 }
 
                                 // with TERNARY
-let ball = 48;
+let result = 48;
 
-let student = ball <= 100 && ball >= 86 ? 'A' : 'FAILED' && ball <= 85 && ball >= 61 ? 'B' : 'FAILED' && ball <= 60 && ball >= 50 ? 'C' : 'FAILED';
+let student = result <= 100 && result >= 86 ? 'A' : 'FAILED' && result <= 85 && result >= 61 ? 'B' : 'FAILED' && result <= 60 && result >= 50 ? 'C' : 'FAILED';
 console.log(student); 
 
 
@@ -59,9 +59,9 @@ if (meva === 'olma'){
 }
 
                                  // with SWITCH/CASE
-let meva = 'nok'
+let fruits = 'nok'
 
-switch (meva){
+switch (fruits){
     case 'olma': console.log('10.000'); break
     case 'nok': console.log('12.000'); break
     case 'tarvuz': console.log('20.000'); break
@@ -69,77 +69,77 @@ switch (meva){
 }
 
                                  // with TERNARY
-let meva = 'tarvuz';
+let meva1 = 'tarvuz';
 
-let fruit = meva === 'olma' ? '10.000' : 'Bunday meva yoq' && meva === 'nok' ? '12.000' : 'Bunday meva yoq' && meva === 'tarvuz' ? '20.000' : 'Bunday meva yoq';
+let fruit = meva1 === 'olma' ? '10.000' : 'Bunday meva yoq' && meva1 === 'nok' ? '12.000' : 'Bunday meva yoq' && meva1 === 'tarvuz' ? '20.000' : 'Bunday meva yoq';
 console.log(fruit);
 
 
 
                                      // HOMEWORK 2-4
                                      // with IF/ELSE
-let num = 30;
-if(num % 3 === 0 && num % 5 === 0){
+let num1 = 30;
+if(num1 % 3 === 0 && num1 % 5 === 0){
     console.log('3ga va 5ga bulinadi');
-}else if(num % 5 === 0){
+}else if(num1 % 5 === 0){
     console.log('5ga bulinadi');
-}else if(num % 3 === 0){
+}else if(num1 % 3 === 0){
     console.log('3ga bulinadi');
 }else{
     console.log('Wrong Logic');
 }
 
                                     // with TERNARY
-let num = 6;
+let num2 = 6;
 
-let number = num % 3 === 0 && num % 5 === 0 ? '3ga va 5ga bulinadi' : 'Wrong Logic' && num % 5 === 0 ? '5ga bulinadi' : 'Wrong Logic' && num % 3 === 0 ? '3ga bulinadi' : 'Wrong Logic';
+let number = num2 % 3 === 0 && num2 % 5 === 0 ? '3ga va 5ga bulinadi' : 'Wrong Logic' && num2 % 5 === 0 ? '5ga bulinadi' : 'Wrong Logic' && num2 % 3 === 0 ? '3ga bulinadi' : 'Wrong Logic';
 console.log(number);
 
 
 
                                 // HOMEWORK 2-5
                                // SWITCH/CASE
-let browser = 'Edge';
+let browser1 = 'Edge';
 
-switch (browser){
+switch (browser1){
     case 'Edge': console.log('You have got the Edge'); break
     case 'Chrome' || 'Firefox' || 'Safari' || 'Opera': console.log('Okey We support these browsers too'); break
     default: console.log('We hope that this page looks OK!');
 }
 
                                    // Rewrite "SWITCH" with "IF"
-let browser = 'Chrome';
+let browser2 = 'Chrome';
 
-if(browser === 'Edge'){
+if(browser2 === 'Edge'){
     console.log('You have got the Edge');
-}else if(browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera'){
+}else if(browser2 === 'Chrome' || browser2 === 'Firefox' || browser2 === 'Safari' || browser2 === 'Opera'){
     console.log('Okey we support these browsers too');
 }else {
     console.log('We hope that this page looks OK!');
 }
 
                                         //Rewrite SWITCH with TERNARY
-let browser = 'Edge';
+let browser3 = 'Edge';
 
-let SearchEngine = browser === 'Edge' ? 'You have got the Edge' : 'We hope that this page looks OK!' && browser === 'Chrome' && 'Firefox' && 'Safari' && 'Opera' ? 'Okey we support these browsers too' : 'We hope that this page looks OK!';
+let SearchEngine = browser3 === 'Edge' ? 'You have got the Edge' : 'We hope that this page looks OK!' && browser3 === 'Chrome' && 'Firefox' && 'Safari' && 'Opera' ? 'Okey we support these browsers too' : 'We hope that this page looks OK!';
 console.log(SearchEngine);
 
 
-                                       // HOMEWORK 2-6
+// HOMEWORK 2-6
                                // Rewrite IF/ELSE with TERNARY
 let login = 'Director';
 
-let message = login === 'Employee' ? 'Hello' : '""' && 
+let message1 = login === 'Employee' ? 'Hello' : '""' && 
 login === 'Director' ? 'Greetings' : '""' && 
 login === '' ? 'No login' : '""';
 
-console.log(message);
+console.log(message1);
 
                                // Rewrite IF/ELSE with SWITCH/CASE
 
-let message = 'Director'
+let message2 = 'Director'
 
-switch(message){
+switch(message2){
     case 'Employee': console.log('Hello'); break
     case 'Director': console.log('Greetings'); break
     case '" "': console.log('No login'); break
