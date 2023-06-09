@@ -1,64 +1,79 @@
  
 // HOMEWORK 13-1
-// 1-getting sum of nested obj age
+// Getting sum of nested obj.age in Recursive function
 
-let family = {
-
-  father: {
-  name: 'Ali',
-  age: 38,
-
-  mother: {
-    name: 'Sophia',
-    age: 31,
-
-    children: [
-      { name: 'Muhammad', age: 5 },
-      { name: 'Zinnura', age: 8 }
-    ],
-  },
-  },
-
+let user = {
+    name: 'Alisher',
+    age: 30,
+    CHILD: {
+      name: 'Sophia',
+      age: 20,
+      CHILD: {
+        name: 'Muhammad',
+        age: 10,
+        CHILD: {
+          name: 'Sumayya',
+          age: 3,
+        }
+      }
+    } 
 };
 
-function calculateAgeSum (obj) {
-  let sum = 0;
+sum = 0;
 
-  for (let key in obj) {
-    if (typeof obj[key] === 'number') {
-      sum += obj[key];
+let getAge = (obj) => {
+  sum += obj.age
 
-    } else if (typeof obj[key] === 'object') {
-      sum += calculateAgeSum(obj[key]);
-    }
+  if(obj.CHILD){
+    getAge(obj.CHILD)
   }
-
-  return sum;
 }
 
-let ageSum = calculateAgeSum(family);
-console.log(ageSum);
+getAge(user)
+console.log(sum);
 
 
 // HOMEWORK 13-2
-//Finding sum of n,   n = 5.
 
+//Finding sum of n,   n = 5.  with for-loop
 function calculateSum(n) {
   let sum = 0;
   for (let i = 1; i <= n; i++) {
     sum += i;
   }
-  return sum;
+  console.log(sum);
 }
+calculateSum(5);
 
-let n = 5;
-let sum = calculateSum(n);
-console.log(sum);
+
+//Finding sum of n,   n = 5.  with Recursive function
+const findSum = (n) =>{
+
+  if(n > 0){
+    return n + findSum(n - 1);
+  } else {
+    return n
+  }
+
+}
+console.log(findSum(5));
+
+
 
 // HOMEWORK 13-3.
 // Removing duplicates without using new Set().
 
 // 1st METHOD
+let array1 = [3, 1, 1, 2, 2, 4, 3, 4];
+
+let uniqueValue = array1.sort().filter( (value, index) => {
+  return array1.indexOf(value) === index
+});
+
+console.log(uniqueValue);
+
+
+// 2nd METHOD
 let array = [3, 1, 1, 2, 2, 4, 3, 4];
 
 function removeDuplicates(array) {
@@ -69,7 +84,7 @@ let newArray = removeDuplicates(array);
 console.log(newArray);
 
 
-// 2nd METHOD
+// 3rd METHOD
 let arr = [1, 1, 2, 2, 4, 3, 2, 4];
 
 function removeDuplicates(arr) {
